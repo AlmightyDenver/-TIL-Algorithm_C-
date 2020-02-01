@@ -1,31 +1,31 @@
-//#include <vector>
-//#include <iostream>
-//#include <algorithm>
-//
-//int check(vector<int>& A, int tf) {
-//	int cnt = 0;
-//	for ((insigned int) i = 0; i < A.size(); ++i) {
-//		//È¦¼öÀÚ¸®
-//		if (i % 2 == 1) {
-//			if (A[i] == tf) continue;
-//			else cnt++;
-//		}
-//		//Â¦¼öÀÚ¸® 0ÀÌ¾î¾ß
-//		else {
-//			if (A[i] != tf) continue;
-//			else cnt++;
-//		}
-//	}
-//	return cnt;
-//}
-//
-//int solution(vector<int>& A) {
-//	int ans = min(check(A, 1), check(A, 0));
-//	return ans;
-//}
-//
-//int main() {
-//	vector<int> A = {1,0,1,0,1,1};
-//	solution(A);
-//	return 0;
-//}
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+int check(vector<int>& A, int tf) {
+	int cnt = 0;
+	for ((insigned int) i = 0; i < A.size(); ++i) {
+		//í™€ìˆ˜ìžë¦¬
+		if (i % 2 == 1) {
+			if (A[i] == tf) continue;
+			else cnt++;
+		}
+		//ì§ìˆ˜ìžë¦¬ 0ì´ì–´ì•¼
+		else {
+			if (A[i] != tf) continue;
+			else cnt++;
+		}
+	}
+	return cnt;
+}
+
+int solution(vector<int>& A) {
+	int ans = min(check(A, 1), check(A, 0));
+	return ans;
+}
+
+int main() {
+	vector<int> A = {1,0,1,0,1,1};
+solution(A);
+	return 0;
+}
