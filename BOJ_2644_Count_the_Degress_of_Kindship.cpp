@@ -34,7 +34,7 @@ int main() {
 		}
 		for (int i = 0; i < (int)adj[curr].size(); i++) {
 			int next = adj[curr][i];
-			if (dist[next]) continue;
+			if (dist[next] != 0) continue;
 			q.push(next);
 			dist[next] = dist[curr] + 1;
 		}
