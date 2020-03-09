@@ -1,0 +1,17 @@
+200309
+
+Done :
+1. 메뉴 초기 화면만들기(background, category, home picturebox)
+2. 기본 폰트 설정
+3. picutrebox에 그림 동적생성 
+
+
+To Do :
+
+1. picturebox 동적 생성
+2. step 드래그 넘기기
+3-1. step2 -> 카테고리 드래그로 넘기기
+3-2. 	   -> 메뉴 스크롤
+
+
+Memo :
