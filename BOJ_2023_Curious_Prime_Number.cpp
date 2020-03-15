@@ -15,6 +15,7 @@ bool isPrime(int num) {
 	return true;
 }
 
+
 void makePN(int num) {
 	if (num >= pow(10, N)) return;
 	for (int i = 0; i < 4; i++) {
