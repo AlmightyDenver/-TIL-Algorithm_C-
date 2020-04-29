@@ -1,8 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <string>
 #include <vector>
-#include <cstring> //strtok
+#include <cstring> //strtok, strcpy
 #include <algorithm>
-#include <cstdlib> //stoi, atoi
+#include <cstdlib> //stoi
 using namespace std;
 
 bool cmpr(string a, string b) {
@@ -44,7 +45,7 @@ vector<int> solution(string s) {
         strcpy(str_buff, str.c_str());
         char* token = strtok(str_buff, ",");
         while (token != nullptr) {
-            if (std::find(tmp.begin(), tmp.end(), token) == tmp.end()) tmp.push_back(string(token));
+            if (find(tmp.begin(), tmp.end(), token) == tmp.end()) tmp.push_back(string(token));
             token = strtok(nullptr, ",");
         }
     }
